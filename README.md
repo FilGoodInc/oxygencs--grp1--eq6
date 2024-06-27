@@ -52,3 +52,24 @@ MIT
 ## Contact
 
 For more information, please feel free to contact the repository owner.
+
+# Configuration de l'application
+
+## Variables d'environnement
+
+L'application utilise les variables d'environnement suivantes, configurées dans un fichier `.env` :
+
+- `HOST` : Adresse de l'habitation
+- `TOKEN` : Token de la pièce
+- `T_MAX` : Température maximale
+- `T_MIN` : Température minimale
+- `DATABASE_URL` : URL de connexion à la base de données
+
+## Exemple de fichier .env
+
+```env
+HOST=example_host
+TOKEN=example_token
+T_MAX=25
+T_MIN=18
+DATABASE_URL=postgresql://user:password@localhost:5432/mydatabase
