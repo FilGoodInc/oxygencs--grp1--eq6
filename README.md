@@ -19,16 +19,6 @@ Install the project's dependencies :
 pipenv install
 ```
 
-## Setup
-
-You need to setup the following variables inside the App class:
-
-- HOST: The host of the sensor hub and HVAC system.
-- TOKEN: The token for authenticating requests.
-- T_MAX: The maximum allowed temperature.
-- T_MIN: The minimum allowed temperature.
-- DATABASE_URL: The database connection URL.
-
 ## Running the Program
 
 After setup, you can start the program with the following command:
