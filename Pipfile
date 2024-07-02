@@ -8,8 +8,16 @@ requests = "*"
 signalrcore = "*"
 python-dotenv = "*"
 psycopg2-binary = "*"
+pytest = "*"
+pre-commit = "*"
+pylint = "*"
+black = "*"
 
 [dev-packages]
+pylint = "*"
+black = "*"
+pytest = "*"
+pre-commit = "*"
 
 [requires]
 python_version = "3.8"

@@ -1,0 +1,5 @@
+[MASTER]
+init-hook="import sys; from os.path import dirname, abspath; sys.path.append(dirname(abspath(__file__)) + '/src')"
+
+[MESSAGES CONTROL]
+disable=import-error, too-many-instance-attributes, protected-access, redefined-outer-name

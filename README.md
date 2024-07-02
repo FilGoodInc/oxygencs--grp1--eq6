@@ -26,6 +26,13 @@ After setup, you can start the program with the following command:
 ```bash
 pipenv run start
 ```
+## Running Tests
+
+To ensure the quality of the code, run the unit tests using the following command:
+
+```bash
+pipenv run test
+```
 
 ## Logging
 
