@@ -13,3 +13,10 @@ repos:
     rev: v3.2.5
     hooks:
       - id: pylint
+  - repo: local
+    hooks:
+      - id: pytest
+        name: pytest
+        entry: pytest test/test_unit.py
+        language: python
+        types: [python]

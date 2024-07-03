@@ -12,6 +12,7 @@ pytest = "*"
 pre-commit = "*"
 pylint = "*"
 black = "*"
+requests-mock = "*"
 
 [dev-packages]
 pylint = "*"
