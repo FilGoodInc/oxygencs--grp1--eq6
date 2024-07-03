@@ -48,7 +48,7 @@ class App:
     def setup_sensor_hub(self):
         """Configure hub connection and subscribe to sensor data events."""
         url = f"{self.host}/SensorHub?token={self.token}"
-        print(f"Connecting to: {url}")  # Debug print
+        print(f"Connecting to: {url}")
         self._hub_connection = (
             HubConnectionBuilder()
             .with_url(url)
@@ -94,7 +94,7 @@ class App:
     def send_action_to_hvac(self, action):
         """Send action query to the HVAC service."""
         response = requests.get(
-            f"{self.host}/api/hvac/{self.token}/{action}/{self.ticks}"
+            f"{self.host}/api/hvac/{self.token}/{action}/{self.ticks}", timeout=10
         )
         details = json.loads(response.text)
         print(details, flush=True)
