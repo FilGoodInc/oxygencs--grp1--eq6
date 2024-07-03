@@ -26,8 +26,8 @@ jobs:
           pip install pipenv
           pipenv install --dev
 
-      - name: Run integration tests
-        run: pipenv run pytest tests/test_integration.py
+      - name: Run integration test
+        run: pipenv run pytest test/test_integration.py
 
   lint_and_format:
     runs-on: ubuntu-latest
