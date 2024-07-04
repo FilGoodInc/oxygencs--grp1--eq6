@@ -1,0 +1,29 @@
+# Ignore Python cache files
+__pycache__
+*.pyc
+*.pyo
+
+# Ignore Git files
+.git
+.gitignore
+
+# Ignore Dockerfile and .dockerignore
+Dockerfile
+.dockerignore
+
+# Ignore local configuration files
+*.local
+*.log
+
+# Ignore unit test and coverage results
+*.coverage
+.coverage
+.coverage.*
+
+# Ignore pytest cache
+.pytest_cache
+
+# Ignore build artifacts
+build/
+dist/
+*.egg-info/
