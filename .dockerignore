@@ -1,29 +1,13 @@
-# Ignore Python cache files
+.git
 __pycache__
 *.pyc
 *.pyo
-
-# Ignore Git files
-.git
-.gitignore
-
-# Ignore Dockerfile and .dockerignore
-Dockerfile
-.dockerignore
-
-# Ignore local configuration files
-*.local
+*.pyd
+*.db
+*.sqlite
 *.log
-
-# Ignore unit test and coverage results
-*.coverage
-.coverage
-.coverage.*
-
-# Ignore pytest cache
-.pytest_cache
-
-# Ignore build artifacts
-build/
-dist/
-*.egg-info/
+.env.local
+.DS_Store
+node_modules
+build
+dist
