@@ -9,7 +9,7 @@ from src.main import App
 def app_instance():
     """Fixture for creating an instance of App."""
     app = App()
-    app._db_connection = MagicMock()  # Mock the _db_connection attribute
+    app._db_connection = MagicMock()
     return app
 
 
@@ -40,6 +40,6 @@ def test_save_event_to_database(app_instance):
     """Test the save_event_to_database method."""
     with patch.object(
         app_instance._db_connection, "cursor", create=True
-    ) as mock_cursor:  # pylint: disable=protected-access
+    ) as mock_cursor:
         app_instance.save_event_to_database("2023-01-01T00:00:00", 25.0, "TurnOnAc")
         mock_cursor.assert_called_once()
