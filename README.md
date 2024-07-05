@@ -4,7 +4,7 @@ This Python application continuously monitors a sensor hub and manages HVAC (Hea
 
 It leverages `signalrcore` to maintain a real-time connection to the sensor hub and utilizes `requests` to send GET requests to a remote HVAC control endpoint.
 
-This application uses `pipenv`, a tool that aims to bring the best of all packaging worlds to the Python world.
+This application uses `pipenv`, a tool that aims to bring the best of all packaging worlds to the Python world. [Websote](https://pipenv.pypa.io/en/latest/index.html)
 
 ## Requirements
 
