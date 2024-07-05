@@ -33,7 +33,7 @@ def test_take_action_heater(app_instance):
 def test_take_action_nothing(app_instance):
     """Test the take_action method for no action."""
     action = app_instance.take_action(20)
-    assert action == "DoNothing"
+    assert action == "Doothing"
 
 
 def test_save_event_to_database(app_instance):
