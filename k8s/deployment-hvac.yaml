@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hvac-controller
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hvac-controller
+  template:
+    metadata:
+      labels:
+        app: hvac-controller
+    spec:
+      containers:
+      - name: hvac-controller
+        image: log680equipe6ete24/oxygencs-grp1-eq6:latest
+        envFrom:
+        - configMapRef:
+            name: hvac-config
+        - secretRef:
+            name: hvac-secrets
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
+          limits:
+            memory: "256Mi"
+            cpu: "200m"
