@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hvac-config
+data:
+  HVAC_HOST: "http://159.203.50.162"
+  T_MAX: "25"
+  T_MIN: "18"
+  DATABASE_URL: "postgresql://user01eq6:bPfhGVDNQfN3NV5f@157.230.69.113/db01eq6"
