@@ -122,4 +122,7 @@ jobs:
           kubeconfig: ${{ secrets.KUBE_CONFIG }}
 
       - name: Deploy to Kubernetes
-        run: kubectl apply -f k8s/deployment.yaml
+        run: |
+          kubectl apply -f configmap.yaml
+          kubectl apply -f deployment-hvac.yaml
+          kubectl apply -f secret.yaml
