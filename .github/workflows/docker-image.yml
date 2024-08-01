@@ -123,6 +123,6 @@ jobs:
 
       - name: Deploy to Kubernetes
         run: |
-          kubectl apply -f configmap.yaml
-          kubectl apply -f deployment-hvac.yaml
-          kubectl apply -f secret.yaml
+          kubectl apply -f k8s/configmap.yaml
+          kubectl apply -f k8s/deployment-hvac.yaml
+          kubectl apply -f k8s/secret.yaml
