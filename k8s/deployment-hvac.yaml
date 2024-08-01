@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hvac-controller
+  namespace: grp01eq6-namespace
 spec:
   replicas: 1
   selector:
@@ -24,8 +25,8 @@ spec:
         - containerPort: 80
         resources:
           requests:
+            memory: "64Mi"
+            cpu: "50m"
+          limits:
             memory: "128Mi"
             cpu: "100m"
-          limits:
-            memory: "256Mi"
-            cpu: "400m"
